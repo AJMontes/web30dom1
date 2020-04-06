@@ -1,3 +1,10 @@
+const depinkButton = document.getElementById('depink')
+depinkButton.onclick = () => {
+  const pinkH2s = document.querySelectorAll('h2.card-title')
+  for (let i = 0; i < pinkH2s.length; i++) {
+    pinkH2s[i].style.color = ''
+  }
+}
 // // Step 1: Demonstrate single Selections using getElementById() and querySelector()
 // /*  
 // .getElementById()
